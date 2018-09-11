@@ -1,0 +1,68 @@
+@mixin card($url-image) {
+    .card {
+        width: calc(33% - 24px);
+        min-height: 433px;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: 0px 2px 8px rgba(39, 48, 55, 0.1);
+        
+        
+        .card__image {
+            background: linear-gradient(-255deg, rgba(70,30,39,0.3) 30%, rgba(70,30,39,0.3) 80%), url($url-image);
+            background-size: cover;
+            height: 235px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            border-radius: 4px 4px 0px 0px;
+            
+            p {
+                color: #fff;
+                font-size: 1.5rem;
+                line-height: 48px;
+                font-weight: bold;
+                text-transform: uppercase;
+                width: 167px;
+            }
+            
+        }
+        
+        
+        .card__content {
+            padding: 24px 24px;
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: center;
+            
+            .btn-content--card {
+                @include primary-button($primary-gradient, $primary-color);
+                padding-right: 64px;
+            }
+            
+            ul {
+                margin-bottom: 24px;
+                li{
+                    list-style: none;
+                    font-size: 16px;
+                    line-height: 24px;
+                    &::before {
+                        content: '- ';
+                    }
+                }
+                
+            }
+            a {
+                position: relative;
+                
+                &::after{
+                    content: url('../assets/images/arrow-right-circle.png');
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 8px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

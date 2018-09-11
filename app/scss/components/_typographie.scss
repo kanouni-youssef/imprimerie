@@ -1,0 +1,43 @@
+/*Fonts*/
+html {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Libre Baskerville' !important;
+    font-weight: bold !important;
+    color: $primary-text !important;
+}
+
+h1 {
+    font-size: 3.5rem !important;
+    line-height: 64px !important;
+}
+
+h2 {
+    font-size: 3rem !important;
+    line-height: 58px !important;
+}
+
+h3 {
+    font-size: 2.5rem !important;
+    line-height: 48px !important;
+}
+
+h4 {
+    font-size: 2rem !important;
+    line-height: 40px !important;
+}
+
+h5 {
+    font-size: 1.5rem !important;
+    line-height: 32px !important;
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $secondary-text;
+    
+}

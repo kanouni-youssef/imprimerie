@@ -1,0 +1,26 @@
+/* Font google*/
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:300,400,400i,600,700,800');
+
+
+
+@import 'components/default';
+@import 'components/colors';
+@import 'components/typographie';
+@import 'components/buttons';
+@import 'components/header';
+@import 'components/section1';
+@import 'components/cards';
+
+// Required
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/code";
+@import "../../node_modules/bootstrap/scss/grid";
+
+

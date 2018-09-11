@@ -1,0 +1,26 @@
+
+
+@mixin primary-button($color-gradient, $color) {
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    background: $color-gradient;
+    padding: 12px 32px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 16px rgba(255, 60, 137, 0.4);
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+        color: #fff;
+        background:darken($color,8%);
+        text-decoration: none;
+    }
+
+    &:active {
+        color: white;
+        background:darken($color,25%);
+    } 
+}
+
+
