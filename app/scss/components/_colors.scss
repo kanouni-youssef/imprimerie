@@ -2,7 +2,13 @@
 $primary-text: #273037;
 $secondary-text: lighten($primary-text, 20%);
 $primary-color: #FF3C89;
-$primary-gradient: linear-gradient(to right, $primary-color 0%, lighten($primary-color, 20%) 100%);
+$blue: #00B2FF;
 $secondary-color:#461E27;
+
+$white: #fff;
+$pink: #FF3C89;
+
+$primary-gradient: linear-gradient(to right, $primary-color 0%, lighten($primary-color, 20%) 100%);
+$blue-gradient: linear-gradient(to right, $blue 0%, lighten($blue, 20%) 100%);
 
 $divider-color: #423C96;

@@ -83,7 +83,7 @@
             justify-content: center;
             
             .btn-content--card {
-                @include primary-button($primary-gradient, $primary-color);
+                @include primary-button($primary-gradient, $primary-color, $primary-color);
                 padding-right: 64px;
             }
             

@@ -1,8 +1,11 @@
 /* Font google*/
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:300,400,400i,600,700,800");
-* {
+*,
+*::before,
+*::after {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
 
 /*Fonts*/
 html {
@@ -11,7 +14,8 @@ html {
 h1, h2, h3, h4, h5 {
   font-family: 'Libre Baskerville' !important;
   font-weight: bold !important;
-  color: #273037 !important; }
+  color: #273037 !important;
+  margin-bottom: 0 !important; }
 
 h1 {
   font-size: 3.5rem !important;
@@ -112,7 +116,8 @@ nav li {
   border-radius: 50px;
   box-shadow: 0px 4px 16px rgba(255, 60, 137, 0.4);
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-block; }
   .btn-content:hover {
     color: #fff;
     background: #ff1370;
@@ -219,6 +224,7 @@ nav li {
         box-shadow: 0px 4px 16px rgba(255, 60, 137, 0.4);
         text-transform: uppercase;
         text-decoration: none;
+        display: inline-block;
         padding-right: 64px; }
         .cards .card .card__content .btn-content--card:hover {
           color: #fff;
@@ -261,6 +267,54 @@ nav li {
     margin-bottom: 2rem; }
     .section2 .section2__text:last-child {
       margin: 0; }
+
+.section3 {
+  padding: 60px 0px; }
+  .section3__title {
+    text-align: center; }
+  .section3__cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    justify-content: center; }
+    .section3__cards .card {
+      width: calc(33% - 24px);
+      margin-right: 24px;
+      background: #fff;
+      border-radius: 4px;
+      box-shadow: 0px 2px 8px rgba(39, 48, 55, 0.1);
+      padding: 32px;
+      margin-bottom: 32px;
+      text-align: center;
+      box-sizing: border-box; }
+      .section3__cards .card:last-child {
+        margin-right: 0; }
+      .section3__cards .card__img {
+        margin-bottom: 24px;
+        align-self: center;
+        vertical-align: middle; }
+      .section3__cards .card__title {
+        margin-bottom: 24px; }
+      .section3__cards .card__text {
+        margin-bottom: 24px; }
+      .section3__cards .card__btn {
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+        background: linear-gradient(to right, #00B2FF 0%, #66d1ff 100%);
+        padding: 12px 32px;
+        border-radius: 50px;
+        box-shadow: 0px 4px 16px rgba(0, 178, 255, 0.4);
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block; }
+        .section3__cards .card__btn:hover {
+          color: #fff;
+          background: #ebebeb;
+          text-decoration: none; }
+        .section3__cards .card__btn:active {
+          color: white;
+          background: #bfbfbf; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -381,7 +435,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #FF3C89;
   word-break: break-word; }
   a > code {
     color: inherit; }

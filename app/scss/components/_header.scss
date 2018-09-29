@@ -90,7 +90,7 @@ nav {
 }
 
 .btn-content {
-    @include primary-button($primary-gradient, $primary-color);
+    @include primary-button($primary-gradient, $primary-color, $pink);
 }
 
 .go-bottom {
