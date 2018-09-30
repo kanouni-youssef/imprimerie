@@ -2,6 +2,7 @@
 
 @mixin primary-button($color-gradient, $color, $shadow) {
     font-size: 16px;
+    font-weight: 600;
     line-height: 24px;
     color: white;
     background: $color-gradient;

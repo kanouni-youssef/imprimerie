@@ -6,88 +6,99 @@
     height: 85vh;
     position: relative;
     
-}
-
-.flex__content--header {
-    height: calc(85vh - 110px);
-    display: flex;
-    flex-flow: wrap row;
-}
-
-.header__nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    height: 110px;
-    width: 100%;
-}
-
-.header__content {
-    // margin-top: 2.5rem;
-    align-self: center;
-    width: 568px;
-    padding: 30px;
-}
-
-nav {
-    ul {
-        margin: 10px 0px 0px;
+    .flex__content--header {
+        height: calc(85vh - 110px);
+        display: flex;
+        flex-flow: wrap row;
     }
-    li {
-        text-decoration: none;
-        list-style: none;
-        display: inline;
-        padding-right: 48px;
-        
-        &:last-child{
-            padding-right: 0;
+    
+    nav {
+        ul {
+            margin: 10px 0px 0px;
         }
-        
-        a {
-            color: $primary-text;
-            font-family: 'Libre Baskerville';
-            text-transform: capitalize;
-            font-size: 1.125rem;
+        li {
             text-decoration: none;
-            font-weight: bold;
+            list-style: none;
+            display: inline;
+            padding-right: 48px;
             
-            &:hover {
-                text-decoration: none;
-                color: $secondary-color;
+            &:last-child{
+                padding-right: 0;
             }
             
-            &.btn-nav{
-                color: $primary-color;
-                background: #fff;
-                padding: 12px 32px;
-                border-radius: 50px;
-                box-shadow: 0px 4px 16px rgba(255, 60, 137, 0.2);
-                text-transform: uppercase;
+            a {
+                color: $primary-text;
+                font-family: 'Libre Baskerville';
+                text-transform: capitalize;
+                font-size: 1.125rem;
+                text-decoration: none;
+                font-weight: bold;
+                
                 &:hover {
-                    color: #fff;
-                    background:$primary-color;
                     text-decoration: none;
+                    color: $secondary-color;
                 }
                 
+                &.btn-nav{
+                    color: $primary-color;
+                    background: #fff;
+                    padding: 12px 32px;
+                    border-radius: 50px;
+                    box-shadow: 0px 4px 16px rgba(255, 60, 137, 0.2);
+                    text-transform: uppercase;
+                    &:hover {
+                        color: #fff;
+                        background:$primary-color;
+                        text-decoration: none;
+                    }
+                    
+                }
             }
+            
+        }
+    }
+    
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        height: 110px;
+        width: 100%;
+    }
+    
+    
+    &__content {
+        // margin-top: 2.5rem;
+        align-self: center;
+        width: 568px;
+        padding: 30px;
+        
+        &-title {
+            margin-bottom: 2rem;
+            text-transform: capitalize;
         }
         
+        &-text {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            color: $primary-text;
+            margin-bottom: 2rem;
+            opacity: 0.7;
+            
+        }
     }
-}
-
-.h1--header {
-    margin-bottom: 2rem;
-    text-transform: capitalize;
-}
-
-.p--header {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: $primary-text;
-    margin-bottom: 2rem;
-    opacity: 0.7;
+    
     
 }
+
+
+
+
+
+
+
+
+
 
 .btn-content {
     @include primary-button($primary-gradient, $primary-color, $pink);

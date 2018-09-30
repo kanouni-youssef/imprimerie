@@ -1,12 +1,12 @@
 .section1 {
     padding: 90px 0px;
     
-    .section1__h2 {
+    &__title {
         text-align: center;
         margin-bottom: 32px;
         text-transform: uppercase;
     }
-    .section1__text {
+    &__text {
         text-align: center;
         color: $secondary-text;
         margin-bottom: 60px;

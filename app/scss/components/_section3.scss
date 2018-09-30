@@ -41,7 +41,19 @@
             }
     
             &__btn {
-                @include primary-button($blue-gradient, $white, $blue);
+                @include primary-button($blue-gradient, $blue, $blue);
+            }
+
+            &__btn--numerique {
+                 @include primary-button($green-gradient, $green, $green);
+            }
+
+            &__btn--packaging {
+                 @include primary-button($pink-gradient, $pink, $pink);
+            }
+
+            &__btn--finition {
+                 @include primary-button($yellow-gradient, $yellow, $yellow);
             }
         }   
     }

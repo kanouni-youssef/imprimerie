@@ -1,0 +1,120 @@
+
+footer {
+    height: 341px;
+    padding: 60px;
+
+    background-image: url('../../assets/images/bg-footer.png');
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        li{
+            list-style: none;
+        }
+    }
+
+    .footer__socials {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;    
+    }
+    
+    .footer__social {
+        margin-right: 32px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .footer__fb {
+        height: 40px;
+        width: 40px;
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        display: flex;
+        padding: 10px auto;
+        justify-content: center;
+    }
+
+    .footer__google {
+        height: 40px;
+        width: 40px;
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        display: flex;
+        padding: 10px auto;
+        justify-content: center;
+    }
+
+    .footer__twitter {
+        height: 40px;
+        width: 40px;
+        background-color: #FFFFFF;
+        border-radius: 40px;
+        display: flex;
+        padding: 10px auto;
+        justify-content: center;
+    }
+
+    .footer__copyright {
+        text-align: center;
+    }
+
+    .footer__info {
+        color: #FFFFFF;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0 100px;
+        
+        
+        &-text--site {
+            width: 195px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: url("../../assets/images/icons/icon-footer1.svg");
+                left: -25px;
+            }
+            
+        }
+        
+        &-text--adresse {
+            width: 234px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: url("../../assets/images/icons/icon-footer2.svg");
+                left: -25px;
+            }
+            
+        }
+        
+        &-text--tel {
+            width: 148px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: url("../../assets/images/icons/icon-footer3.svg");
+                left: -25px;
+            }
+            
+        }
+        
+        &-text--email {
+            width: 101px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: url("../../assets/images/icons/icon-footer4.svg");
+                left: -25px;
+            }
+            
+        }
+    }
+}

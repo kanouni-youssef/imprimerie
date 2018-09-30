@@ -1,0 +1,28 @@
+.section4 {
+    background: url(../../assets/images/BG-references.png);
+    height: 577px;
+    padding: 185px;
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        color: white !important;
+        margin-bottom: 60px;
+    }
+    &__logos {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 200px;
+        height: 100px;
+        border-radius: 4px;
+        background: #fff;
+        display: flex;
+
+        img {
+            align-content: center;
+            margin: auto;
+        }
+    }
+}

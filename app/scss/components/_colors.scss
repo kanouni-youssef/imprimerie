@@ -2,13 +2,24 @@
 $primary-text: #273037;
 $secondary-text: lighten($primary-text, 20%);
 $primary-color: #FF3C89;
-$blue: #00B2FF;
 $secondary-color:#461E27;
 
-$white: #fff;
+$divider-color: #423C96;
+
 $pink: #FF3C89;
+$blue: #00B2FF;
+$green: #37E9AE;
+$yellow: #FFF153;
+$white: #fff;
+
+
+
+
+
 
 $primary-gradient: linear-gradient(to right, $primary-color 0%, lighten($primary-color, 20%) 100%);
 $blue-gradient: linear-gradient(to right, $blue 0%, lighten($blue, 20%) 100%);
+$pink-gradient: linear-gradient(to right, $pink 0%, lighten($pink, 20%) 100%);
+$yellow-gradient: linear-gradient(to right, $yellow 0%, lighten($yellow, 20%) 100%);
+$green-gradient: linear-gradient(to right, $green 0%, lighten($green, 20%) 100%);
 
-$divider-color: #423C96;
